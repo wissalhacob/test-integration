@@ -138,7 +138,7 @@
         <antcall target="build"/>
     </target>
           
- <target name="integration-test">
+ <target name="test">
   <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
 <property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
 

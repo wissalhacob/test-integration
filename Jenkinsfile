@@ -24,6 +24,11 @@ pipeline {
       bat 'ant package'
     }
   }
+	    stage('Build') {
+   steps {
+      bat 'ant build' // ou 'ant jar'
+   }
+}
    stage('Run') {
             steps {
                 bat 'ant run'

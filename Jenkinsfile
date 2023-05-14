@@ -14,6 +14,21 @@ pipeline {
                 bat "ant compile" // Pour compiler votre projet Java Swing
             }
         }
+		stage('Test') {
+    steps {
+      bat 'ant test'
+    }
+  }
+  stage('Package') {
+    steps {
+      bat 'ant package'
+    }
+  }
+   stage('Run') {
+            steps {
+                bat 'ant run'
+            }
+        }
 
 
 

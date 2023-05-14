@@ -43,14 +43,14 @@ public class Home {
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.WHITE);
-		frame.setBounds(100, 100, 669, 545);
+		frame.setBounds(100, 100, 940, 545);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.setBackground(Color.WHITE);
-		panel.setBounds(10, 10, 627, 52);
+		panel.setBounds(10, 10, 906, 52);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -58,17 +58,17 @@ public class Home {
 		lab.setHorizontalAlignment(SwingConstants.CENTER);
 		lab.setFont(new Font("Sylfaen", Font.PLAIN, 31));
 		lab.setForeground(Color.BLUE);
-		lab.setBounds(163, 10, 273, 36);
+		lab.setBounds(344, 10, 273, 36);
 		panel.add(lab);
 		
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(0, 204, 204));
-		panel_1.setBounds(10, 72, 627, 426);
+		panel_1.setBounds(10, 72, 906, 426);
 		frame.getContentPane().add(panel_1);
 		
 		JButton btn_medecin = new JButton("Medecins");
-		btn_medecin.setBounds(213, 113, 218, 60);
+		btn_medecin.setBounds(358, 98, 218, 60);
 		btn_medecin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				 Medecins medecins = null;
@@ -108,7 +108,7 @@ public class Home {
 		    }
 			
 		});
-		btn_patient.setBounds(213, 213, 218, 60);
+		btn_patient.setBounds(358, 220, 218, 60);
 		btn_patient.setForeground(new Color(0, 128, 255));
 		btn_patient.setFont(new Font("Tahoma", Font.BOLD, 21));
 		btn_patient.setBackground(Color.WHITE);
@@ -117,7 +117,7 @@ public class Home {
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBackground(new Color(51, 204, 204));
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\hacob\\Desktop\\eclipse\\istockphoto-1146968122-612x612.jpg"));
-		lblNewLabel.setBounds(10, 0, 612, 410);
+		lblNewLabel.setBounds(10, 0, 901, 410);
 		panel_1.add(lblNewLabel);
 		File imageFile = new File("/Image/istockphoto-1146968122-612x612.jpg");
 		ImageIcon imageIcon = new ImageIcon(imageFile.getAbsolutePath());

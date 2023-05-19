@@ -35,10 +35,10 @@ public class Home {
 	}
 
 
-	public HomeE() {
-		
-		
+	public Home() {
+		initialize();
 	}
+
 
 	private void initialize() {
 		frame = new JFrame();

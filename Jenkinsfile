@@ -3,6 +3,12 @@ pipeline {
     environment {
         JAVA_HOME = tool 'jdk-11' // Spécifiez ici la version de Java que vous utilisez pour votre application
     }
+	 stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/wissalhacob/test-integration.git'
+            }
+        }
     stages {
         stage('---clean---') {
             steps {

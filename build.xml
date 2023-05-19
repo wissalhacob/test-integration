@@ -27,7 +27,7 @@
       
     </path>
              
-                <target name="run" depends="compile">
+     <target name="run" depends="compile">
   <java classname="Home">
     <classpath>
       <pathelement location="${build.dir}"/>
@@ -137,8 +137,10 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-          
- <target name="test">
+    <target name="create-reports-dir">
+  <mkdir dir="${build.dir}/reports"/>
+</target>
+ <target name="test"  depends="create-reports-dir">
   <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
 <property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
 

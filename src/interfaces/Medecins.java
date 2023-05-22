@@ -67,6 +67,7 @@ public class Medecins {
      ResultSet rs;
      private JButton btnNewButton;
 	public Medecins() throws ClassNotFoundException, SQLException {
+		   initialize();
 		    afficherMedecins();
 
 	}

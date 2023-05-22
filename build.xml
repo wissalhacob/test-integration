@@ -161,25 +161,7 @@
     <target name="create-reports-dir">
   <mkdir dir="${build.dir}/reports"/>
 </target>
- <target name="test"  depends="create-reports-dir">
-  <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
-<property name="test.dir" value="C:\\Users\\hacob\\Desktop\\eclipse\\Clinique\\test"/>
 
-  <mkdir dir="${build.dir}/reports"/>
-
-  <junit printsummary="yes" haltonfailure="yes">
-    <classpath>
-      <path location="${classpath}"/>
-      <pathelement location="${test.dir}"/>
-    </classpath>
-    <formatter type="xml"/>
-    <batchtest fork="yes" todir="${build.dir}/reports">
-      <fileset dir="${test.dir}">
-        <include name="**/*Test.java"/>
-      </fileset>
-    </batchtest>
-  </junit>
-</target>
         <target name="package" depends="build">
   <jar destfile="${dist.dir}/${ant.project.name}.jar"
     basedir="${build.dir}" />

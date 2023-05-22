@@ -33,6 +33,26 @@
       <pathelement location="${build.dir}"/>
     </classpath>
   </java>
+  <target name="test">
+  <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
+<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
+
+  <mkdir dir="${build.dir}/reports"/>
+
+  <junit printsummary="yes" haltonfailure="yes">
+    <classpath>
+      <path location="${classpath}"/>
+      <pathelement location="${test.dir}"/>
+    </classpath>
+    <formatter type="xml"/>
+    <batchtest fork="yes" todir="${build.dir}/reports">
+      <fileset dir="${test.dir}">
+        <include name="**/*Test.java"/>
+      </fileset>
+    </batchtest>
+  </junit>
+</target>
+
 
 
     <path id="run.Home (1).classpath">

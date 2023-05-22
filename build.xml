@@ -11,7 +11,9 @@
     <property name="source" value="11"/>
                 <property name="src.dir" value="src"/>
                 <property name="classpath" value="${build.dir}:${lib.dir}/*;C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
- 
+ <property name="build.dir" value="build" />
+<property name="src.dir" value="src" />
+
                 
                 
                 

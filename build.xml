@@ -142,7 +142,7 @@
 </target>
  <target name="test"  depends="create-reports-dir">
   <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
-<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique\test"/>
+<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
 
   <mkdir dir="${build.dir}/reports"/>
 

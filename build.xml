@@ -29,7 +29,7 @@
       
     </path>
              
-     <target name="run" depends="compile">
+     <target name="run" >
   <java classname="Home">
     <classpath>
       <pathelement location="${build.dir}"/>

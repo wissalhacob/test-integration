@@ -5,6 +5,7 @@ pipeline {
     }
 	 
     stages {
+	
 	     stage('Checkout') {
             steps {
                 git 'https://github.com/wissalhacob/test-integration.git'

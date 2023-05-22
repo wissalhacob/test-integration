@@ -122,10 +122,6 @@ public class Home {
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\hacob\\Desktop\\eclipse\\istockphoto-1146968122-612x612.jpg"));
 		lblNewLabel.setBounds(10, 0, 901, 410);
 		panel_1.add(lblNewLabel);
-		File imageFile = new File("/Image/istockphoto-1146968122-612x612.jpg");
-		ImageIcon imageIcon = new ImageIcon(imageFile.getAbsolutePath());
-		JLabel background = new JLabel(imageIcon);
-		background.setBounds(0, 0, 1034, 514);
 	}
 	public void setVisible(boolean b) {
 	    frame.setVisible(b);

@@ -66,7 +66,6 @@ public class Patient {
      ResultSet rs;
      private JTextField txt_maladie;
 	public Patient() throws ClassNotFoundException, SQLException {
-		    initialize();
 		    afficherPatient();
           liste();
 

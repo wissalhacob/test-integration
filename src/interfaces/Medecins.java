@@ -242,7 +242,12 @@ public class Medecins {
 					  int tel;
 			
 
-					  
+					  try {
+				             tel = Integer.parseInt(txt_tel.getText());
+				        } catch (NumberFormatException ex) {
+				            JOptionPane.showMessageDialog(null, "Vérifier vos données", "Erreur de saisie", JOptionPane.ERROR_MESSAGE);
+				            return;
+				        }
 				
 						Connect();
 

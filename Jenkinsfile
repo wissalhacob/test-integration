@@ -6,6 +6,7 @@ pipeline {
 	 
     stages {
 	
+	     
         stage('---clean---') {
             steps {
                 bat "ant clean" // Pour nettoyer votre projet Java Swing

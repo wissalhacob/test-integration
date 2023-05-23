@@ -1,213 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Clinique">
-    <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="11"/>
-    <property name="source" value="11"/>
-                <property name="src.dir" value="src"/>
-                <property name="classpath" value="${build.dir}:${lib.dir}/*;C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
- <property name="build.dir" value="build" />
-<property name="src.dir" value="src" />
+<project name="Clinique" default="run" basedir=".">
+    <description>
+        Ant build script for the Clinique project.
+    </description>
 
-                
-                
-                
-               
+    <!-- Properties -->
+    <property name="src.dir" location="src"/>
+    <property name="build.dir" location="build"/>
+    <property name="dist.dir" location="dist"/>
+
+    <!-- Classpath -->
     <path id="Clinique.classpath">
-        <pathelement location="bin"/>
-        <pathelement location="C:/Users/hacob/Downloads/Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-        <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-        <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-        <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-      
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
     </path>
-             
-     <target name="run" >
-  <java classname="Home">
-    <classpath>
-      <pathelement location="${build.dir}"/>
-    </classpath>
-  </java>
- 
 
-
-
-    <path id="run.Home (1).classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Programmes \apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Home (2).classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Programmes \apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Home.classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Programmes \apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Medecins (1).classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Programmes \apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Medecins.classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Programmes \apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Programmes\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Patient (1).classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-    <path id="run.Patient.classpath">
-        <path refid="Clinique.classpath"/>
-        <pathelement location="../../../Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"/>
-  <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\junit-4.13.2-javadoc.jar"/>
-              <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\hamcrest-core-1.3.RC2.jar"/>
-              <pathelement location="C:\Program Files\apache-ant-1.9.16-bin\apache-ant-1.9.16\lib\ant-junit.jar"/>
-
-
-    </path>
-	</target>
-	 <target name="test">
-  <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
-<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
-
-  <mkdir dir="${build.dir}/reports"/>
-
-  <junit printsummary="yes" haltonfailure="yes">
-    <classpath>
-      <path location="${classpath}"/>
-      <pathelement location="${test.dir}"/>
-    </classpath>
-    <formatter type="xml"/>
-    <batchtest fork="yes" todir="${build.dir}/reports">
-      <fileset dir="${test.dir}">
-        <include name="**/*Test.java"/>
-      </fileset>
-    </batchtest>
-  </junit>
-</target>
+    <!-- Initialization target -->
     <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}"/>
     </target>
+
+    <!-- Clean target -->
     <target name="clean">
-        <delete dir="bin"/>
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
     </target>
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
+
+    <!-- Compile target -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}">
             <classpath refid="Clinique.classpath"/>
         </javac>
     </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-                  <target name="compile" description="Compile the source code">
-    <mkdir dir="${build.dir}" />
-    <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" />
-</target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
-    <target name="create-reports-dir">
-  <mkdir dir="${build.dir}/reports"/>
-</target>
 
-        <target name="package" depends="build">
-  <jar destfile="${dist.dir}/${ant.project.name}.jar"
-    basedir="${build.dir}" />
-</target>
-<target name="install">
-  <!-- Les étapes à exécuter pour l'installation -->
-</target>
+    <!-- Run target -->
+    <target name="run" depends="compile">
+        <java classname="Home" classpath="${build.dir}:${Clinique.classpath}">
+            <classpath refid="Clinique.classpath"/>
+        </java>
+    </target>
 
+    <!-- Test target -->
+    <target name="test" depends="compile">
+        <junit printsummary="on">
+            <classpath>
+                <path refid="Clinique.classpath"/>
+                <pathelement location="${build.dir}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <batchtest>
+                <fileset dir="${src.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
 
+    <!-- Distribution target -->
+    <target name="dist" depends="compile">
+        <mkdir dir="${dist.dir}/lib"/>
+        <jar destfile="${dist.dir}/Clinique.jar" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="Home"/>
+            </manifest>
+        </jar>
+    </target>
 
-    <target name="Home (1)">
-        <java classname="Interface.Home" failonerror="true" fork="yes">
-            <classpath refid="run.Home (1).classpath"/>
-        </java>
-    </target>
-    <target name="Home (2)">
-        <java classname="interfaces.Home" failonerror="true" fork="yes">
-            <classpath refid="run.Home (2).classpath"/>
-        </java>
-    </target>
-    <target name="Home">
-        <java classname="Home" failonerror="true" fork="yes">
-            <classpath refid="run.Home.classpath"/>
-        </java>
-    </target>
-    <target name="Medecins (1)">
-        <java classname="interfaces.Medecins" failonerror="true" fork="yes">
-            <classpath refid="run.Medecins (1).classpath"/>
-        </java>
-    </target>
-    <target name="Medecins">
-        <java classname="Interface.Medecins" failonerror="true" fork="yes">
-            <classpath refid="run.Medecins.classpath"/>
-        </java>
-    </target>
-    <target name="Patient (1)">
-        <java classname="interfaces.Patient" failonerror="true" fork="yes">
-            <classpath refid="run.Patient (1).classpath"/>
-        </java>
-    </target>
-    <target name="Patient">
-        <java classname="Interface.Patient" failonerror="true" fork="yes">
-            <classpath refid="run.Patient.classpath"/>
-        </java>
-    </target>
 </project>

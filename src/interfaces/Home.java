@@ -37,7 +37,7 @@ public class Home {
 
 	public Home() {
 		
-		
+		initialize();
 		
 	}
 	

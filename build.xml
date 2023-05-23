@@ -103,25 +103,7 @@
 
     </path>
 	</target>
-	 <target name="test">
-  <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
-<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
 
-  <mkdir dir="${build.dir}/reports"/>
-
-  <junit printsummary="yes" haltonfailure="yes">
-    <classpath>
-      <path location="${classpath}"/>
-      <pathelement location="${test.dir}"/>
-    </classpath>
-    <formatter type="xml"/>
-    <batchtest fork="yes" todir="${build.dir}/reports">
-      <fileset dir="${test.dir}">
-        <include name="**/*Test.java"/>
-      </fileset>
-    </batchtest>
-  </junit>
-</target>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -172,7 +154,25 @@
 <target name="install">
   <!-- Les étapes à exécuter pour l'installation -->
 </target>
+	 <target name="test">
+  <property name="classpath" value="${build.dir}:${lib.dir}/*"/>
+<property name="test.dir" value="C:\Users\hacob\Desktop\eclipse\Clinique/test"/>
 
+  <mkdir dir="${build.dir}/reports"/>
+
+  <junit printsummary="yes" haltonfailure="yes">
+    <classpath>
+      <path location="${classpath}"/>
+      <pathelement location="${test.dir}"/>
+    </classpath>
+    <formatter type="xml"/>
+    <batchtest fork="yes" todir="${build.dir}/reports">
+      <fileset dir="${test.dir}">
+        <include name="**/*Test.java"/>
+      </fileset>
+    </batchtest>
+  </junit>
+</target>
 
 
     <target name="Home (1)">
